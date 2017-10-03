@@ -1,0 +1,41 @@
+<%= form_for(@car_place) do |f| %>
+  <% if @car_place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@car_place.errors.count, "error") %> prohibited this car_place from being saved:</h2>
+
+      <ul>
+      <% @car_place.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hora_entrada %><br>
+    <%= f.time_select :hora_entrada %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_salida %><br>
+    <%= f.time_select :hora_salida %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_entrada %><br>
+    <%= f.date_select :fecha_entrada %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_salida %><br>
+    <%= f.date_select :fecha_salida %>
+  </div>
+  <div class="field">
+    <%= f.label :car_id %><br>
+    <%= f.text_field :car_id %>
+  </div>
+  <div class="field">
+    <%= f.label :place_id %><br>
+    <%= f.text_field :place_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

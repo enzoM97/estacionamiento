@@ -1,0 +1,2 @@
+module CarPlacesHelper
+end

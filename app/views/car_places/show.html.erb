@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hora entrada:</strong>
+  <%= @car_place.hora_entrada %>
+</p>
+
+<p>
+  <strong>Hora salida:</strong>
+  <%= @car_place.hora_salida %>
+</p>
+
+<p>
+  <strong>Fecha entrada:</strong>
+  <%= @car_place.fecha_entrada %>
+</p>
+
+<p>
+  <strong>Fecha salida:</strong>
+  <%= @car_place.fecha_salida %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @car_place.car %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @car_place.place %>
+</p>
+
+<%= link_to 'Edit', edit_car_place_path(@car_place) %> |
+<%= link_to 'Back', car_places_path %>

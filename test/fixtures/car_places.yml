@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hora_entrada: 2017-09-29 16:13:44
+  hora_salida: 2017-09-29 16:13:44
+  fecha_entrada: 2017-09-29
+  fecha_salida: 2017-09-29
+  car_id: 
+  place_id: 
+
+two:
+  hora_entrada: 2017-09-29 16:13:44
+  hora_salida: 2017-09-29 16:13:44
+  fecha_entrada: 2017-09-29
+  fecha_salida: 2017-09-29
+  car_id: 
+  place_id: 

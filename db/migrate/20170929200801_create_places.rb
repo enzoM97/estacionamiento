@@ -1,0 +1,9 @@
+class CreatePlaces < ActiveRecord::Migration
+  def change
+    create_table :places do |t|
+      t.boolean :occupied
+
+      t.timestamps null: false
+    end
+  end
+end
